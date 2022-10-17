@@ -111,7 +111,6 @@ body{
 }
 .direction-content{
     padding-bottom: 95px;
-    background-color: #F5F5F5
 }
 .content .item+.item{
     margin-left: 30px;
@@ -150,7 +149,6 @@ body{
     letter-spacing: 0.02em;
 }
 .link-icon{
-    display: center;
     align-content: center;
     justify-content: center;
     margin-right: 10px;
@@ -165,12 +163,15 @@ body{
 .link:focus{
     color: var(--color-logo)
 }
+.link:focus .link-icon{
+    fill: var(--color-logo)
+}
 .header-contacts{
     text-decoration: none;
     color: #757575;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1,15;
+    line-height: 1.15;
     letter-spacing: 0.02em;
 }
 .header-contacts:hover{
@@ -180,6 +181,9 @@ body{
 .header-contacts:focus{
     color: var(--color-logo);
     letter-spacing: 0.02em;
+}
+.header-contacts:focus .link-icon{
+    fill: var(--color-logo);
 }
 .bottom{
     font-family: 'Roboto';
@@ -301,6 +305,7 @@ body{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.6;
+    letter-spacing: 0.06em;
 }
 .item-icons{
     padding: 25px 100px;
@@ -370,7 +375,6 @@ body{
     flex-wrap: wrap;
     width: 270px;
     padding-top: 30px;
-    padding-bottom: 30px;
 }
 .comand-item{
     margin-right: 30px;
@@ -401,6 +405,7 @@ body{
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 16px;
 }
 .specialists{
     padding-top: 95px;
@@ -410,13 +415,11 @@ body{
 .soc-list{
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
     gap: 10px;
 }
 .footer-soc .soc-link{
     background-color: rgba(255, 255, 255, 0.1);
-}
-.soc-link+ .soc-link{
-    margin-left: 10px;
 }
 .soc-link{
     width: 44px;
@@ -436,6 +439,12 @@ body{
 }
 .soc-link:hover .soc-item{
     fill: #ffffff;
+}
+.soc-link:focus .soc-item{
+    fill: #ffffff;
+}
+.soc-link:focus{
+    background-color: #2196F3;
 }
 
 .address{
@@ -458,13 +467,11 @@ body{
     margin-bottom: 50px;
 }
 .customers-logo{
-    width: 170px;
-    height: 90px;
     fill: #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    padding: 10px 32px;
 }
-
 .customers-logo+.customers-logo{
     margin-left: 30px;
 }
@@ -474,8 +481,12 @@ body{
 }
 .customers-list{
     display: flex;
+    list-style: none;
     align-items: center;
     justify-content: center;
+}
+.customer-item+ .customer-item{
+    margin-left: 30px;
 }
 .invitation-area{
     margin-right: auto;
@@ -487,6 +498,7 @@ body{
     display: flex;
     justify-content: center;
     align-content: center;
+    gap: 10px;
 }
 .footer-soc .soc-item{
     fill: #ffffff;
